@@ -25,13 +25,27 @@ L'interface utilisateur:
 C'est un activity comprend plusieurs options: 
 - personnel 
 - Transactions 
--  rapports du personnel 
--  rapports de transaction 
-service 
-Internet 
-Send & Connect
+- rapports du personnel 
+- rapports de transaction 
+- buillet_in application
+-service 
+-Internet 
+-Send & Connect
 Lorsque nous voulons augmenter l'employé, par exemple, on peut choisir l'option de personnel, puis nous entrons dans 
 un nouveau activity personnel privé, et à travers eux, nous pouvons augmenter employé et ainsi de suite dans le reste des options.
 
+*buillet_in application:
+De ce qui peut être contrôlé à des fonctions de téléphonie mobile tels que:
+- web browser
+- make calls
+- show map
+- chose contacts
+
+
+*send & connect:
+À partir duquel ils peuvent envoyer des messages courts (SMS) ou envoyez un e-mail et peut également
+communiquer avec les sites Web.
+
+Enfin, j'espère que ce projet sera utile pour tout le monde qui aime à apprendre la programmation
 
 
