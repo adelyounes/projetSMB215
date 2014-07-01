@@ -9,18 +9,29 @@ Je voudrais avoir un projet (android application) et nous pouvons faire plusieur
 
 Son application d'interface comprend plusieurs activités (activities) où l'utilisateur peut 
 choisir l'une des choses suivantes: 
+
  * Bases de données de gestion pour les employés de l'organisation pour laquelle je travaille 
   (Supprimer employé, ajouter des employés, les changements dans le profil et d'autres choses).
 
-*La gestion des transactions distribuées sur les employés d'une organisation 
-(qui a reçu un traitement qui maintient ce nombre, Quand il a terminé et préparé?
+* L'accès à toutes les informations relatives au personnel (absence, présence, où chaque employé travaille?).
 
+* La gestion des transactions (date de réception, la date de livraison, la substance de la transaction, où devrions-nous aborder, etc) 
+  Eh bien, qui est l'employé qui a reçu?
 
-*Communiquer avec le site Web de la Fondation à travers cette application où nous 
-pouvons envoyer et de recevoir l'information que nous voulons.
+*Communiquer avec le site Web de la Fondation à travers cette application où nous pouvons envoyer et de recevoir l'information que nous voulons.
 
+L'interface utilisateur:
 
-
+C'est un activity comprend plusieurs options: 
+- personnel 
+- Transactions 
+-  rapports du personnel 
+-  rapports de transaction 
+service 
+Internet 
+Send & Connect
+Lorsque nous voulons augmenter l'employé, par exemple, on peut choisir l'option de personnel, puis nous entrons dans 
+un nouveau activity personnel privé, et à travers eux, nous pouvons augmenter employé et ainsi de suite dans le reste des options.
 
 
 
