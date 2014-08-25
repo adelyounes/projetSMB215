@@ -387,4 +387,187 @@ public class DisplayContact extends Activity {
       }
    }
 }
+4-activity_main.xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+    </ListView>
+
+</RelativeLayout>
+5-activity_display_contact.xml
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/scrollView1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:context=".DisplayContact" >
+
+<RelativeLayout
+   android:layout_width="match_parent"
+   android:layout_height="370dp"
+   android:paddingBottom="@dimen/activity_vertical_margin"
+   android:paddingLeft="@dimen/activity_horizontal_margin"
+   android:paddingRight="@dimen/activity_horizontal_margin"
+   android:paddingTop="@dimen/activity_vertical_margin"
+   >
+
+   <EditText
+      android:id="@+id/editTextName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_marginTop="5dp"
+      android:layout_marginLeft="82dp"
+      android:ems="10"
+      android:inputType="text" >
+   </EditText>
+     
+  
+
+   <EditText
+      android:id="@+id/editTextEmail"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/editTextStreet"
+      android:layout_below="@+id/editTextStreet"
+      android:layout_marginTop="22dp"
+      android:ems="10"
+      android:inputType="textEmailAddress" />
+   
+
+   <TextView
+      android:id="@+id/textView1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/editTextName"
+      android:layout_alignParentLeft="true"
+      android:text="@string/name"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <Button
+      android:id="@+id/button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/editTextCity"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="28dp"
+      android:onClick="run"
+      android:text="@string/save" />
+
+   <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/editTextEmail"
+      android:layout_alignLeft="@+id/textView1"
+      android:text="@string/email"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <TextView
+      android:id="@+id/textView5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/editTextPhone"
+      android:layout_alignLeft="@+id/textView1"
+      android:text="@string/phone"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/editTextEmail"
+      android:layout_alignLeft="@+id/textView5"
+      android:text="@string/street"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <EditText
+      android:id="@+id/editTextCity"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignRight="@+id/editTextName"
+      android:layout_below="@+id/editTextEmail"
+      android:layout_marginTop="30dp"
+      android:ems="10"
+      android:inputType="text" />
+
+   <TextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/editTextsalaire"
+      android:layout_alignBottom="@+id/editTextCity"
+      android:layout_alignParentLeft="true"
+      android:layout_toLeftOf="@+id/editTextEmail"
+      android:text="@string/salary"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <EditText
+      android:id="@+id/editTextStreet"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/editTextName"
+      android:layout_below="@+id/editTextPhone"
+      android:ems="10"
+      android:inputType="text" >
+
+      <requestFocus />
+   </EditText>
+
+   <EditText
+      android:id="@+id/editTextPhone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/editTextStreet"
+      android:layout_below="@+id/editTextName"
+      android:ems="10"
+      android:inputType="phone|text" />
+
+</RelativeLayout>
+</ScrollView>
+6-display_contact.xml
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item
+      android:id="@+id/Edit_Contact"
+      android:orderInCategory="100"
+      android:title="@string/edit"/>
+   <item
+      android:id="@+id/Delete_Contact"
+      android:orderInCategory="100"
+      android:title="@string/delete"/>
+
+</menu>
+7-mainmenu.xml
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item android:id="@+id/item1" 
+      
+      android:title="@string/Add_New" 
+      android:showAsAction="ifRoom|withText">
+   </item>
+</menu>
+8-main.xml
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>
+
                                                                              
