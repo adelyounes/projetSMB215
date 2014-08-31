@@ -6,6 +6,7 @@ Projet smb215
 *code de "sessionmanagement":
 
 1-session.java
+
 package scom.example.sessionmanagement;
 
 import android.app.Activity;
@@ -43,6 +44,7 @@ protected void onResume() {
 	//scom.example.sessionmanagement. Welcome.class
 	//icom.example.InterfaceApp.MainActivity.class
 	super.onResume(); }
+	
 public void login(View view){
 	Editor editor = sharedpreferences.edit();
 	String u = username.getText().toString(); 
@@ -62,6 +64,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
 
 
 2-code de activity_interface_app.xml
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -99,6 +102,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
         android:text="Service" />
 
 </RelativeLayout>
+
 3- InterfaceApp.java
 package scom.example.sessionmanagement;
 
@@ -151,8 +155,11 @@ b1 = (Button) findViewById(R.id.button1);
 	}
 
 }
+
 * Code de "service":
+
 1-MainActivity.java
+
 package secom.example.service;
 
 import scom.example.sessionmanagement.OnClickListener;
@@ -204,7 +211,9 @@ b1 = (Button) findViewById(R.id.button1);
     }
     
 }
+
 2-activity_main.xml
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -242,7 +251,9 @@ b1 = (Button) findViewById(R.id.button1);
 
 
 *Code du data base "Employees":
+
 1- MainActivity.java
+
 package acom.example.employees;
 
 import java.util.ArrayList;
@@ -329,7 +340,9 @@ public class MainActivity extends Activity {
    }
 
 }
+
 2-DBHelper.java
+
 package acom.example.employees;
 
 import java.util.ArrayList;
@@ -436,8 +449,8 @@ public class DBHelper extends SQLiteOpenHelper {
    }
 }
 3-DisplayContact.java
-package acom.example.employees;
 
+package acom.example.employees;
 
 import acom.example.employees.R;
 import android.os.Bundle;
@@ -623,7 +636,9 @@ public class DisplayContact extends Activity {
       }
    }
 }
+
 4-activity_main.xml
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -643,7 +658,9 @@ public class DisplayContact extends Activity {
     </ListView>
 
 </RelativeLayout>
+
 5-activity_display_contact.xml
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
    xmlns:tools="http://schemas.android.com/tools"
       android:id="@+id/scrollView1"
@@ -786,7 +803,9 @@ public class DisplayContact extends Activity {
       android:title="@string/delete"/>
 
 </menu>
+
 7-mainmenu.xml
+
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
    <item android:id="@+id/item1" 
@@ -806,6 +825,7 @@ public class DisplayContact extends Activity {
 
 </menu>
 9-strings.xml
+
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
@@ -831,7 +851,9 @@ public class DisplayContact extends Activity {
    <string name="no">No</string>
 
 </resources>
+
 9-AndroidManifest.xml
+
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
    package="acom.example.employees"
@@ -867,12 +889,10 @@ public class DisplayContact extends Activity {
 
 
 *Code de Networkconnection
+
 1-MainActivity.java
+
 package ncom.example.networkconnection;
-
-
-
-
 import com.example.networkconnection.R;
 
 import android.app.Activity;
@@ -905,6 +925,7 @@ public class MainActivity extends Activity
 	}
 
 2-DownloadWebPage.java
+
 package ncom.example.networkconnection;
 
 import java.io.BufferedReader;
@@ -1017,7 +1038,9 @@ protected void onPostExecute(String result){
          <string name="click">Download WebPage</string>
           <string name="google">http://www.tutorialspoint.com</string>
            </resources>
+           
 5-AndroidManifest.xml
+
 <?xml version="1.0" encoding="utf-8"?>
  <manifest xmlns:android="http://schemas.android.com/apk/res/android" 
      package="com.example.networkconnection"
@@ -1035,7 +1058,9 @@ protected void onPostExecute(String result){
 
 
 *Code de SendSMS:
+
 1-SendSMS.java
+
 package scom.example.sendsms;
 import android.os.Bundle;
 import android.app.Activity;
@@ -1084,7 +1109,9 @@ protected void onCreate(Bundle savedInstanceState) {
 	
 }
 //}
+
 2-activity_send_sms
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
      android:layout_width="fill_parent" 
      android:layout_height="fill_parent"
@@ -1120,7 +1147,9 @@ protected void onCreate(Bundle savedInstanceState) {
         <string name="sms_label">Enter SMS Message:</string>
          <string name="send_sms_label">Send SMS</string>
           </resources>
+          
 4-AndroidMainfest.xml
+
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="scom.example.sendsms"
