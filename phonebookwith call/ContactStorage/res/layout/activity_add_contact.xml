@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="First Name"
+            />
+        
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/firstName"
+            android:hint="Last Name"
+            />
+        
+    </RelativeLayout>
+    
+    <EditText
+            android:id="@+id/emailID"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" 
+            android:layout_marginTop="8dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email ID"
+            />
+    
+    <EditText
+            android:id="@+id/phone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" 
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            android:hint="Phone Number"
+            />
+    
+    <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp" 
+            android:layout_marginTop="8dp"
+            android:onClick="addToDB"
+            android:text="Add Contact" />
+
+</LinearLayout>
