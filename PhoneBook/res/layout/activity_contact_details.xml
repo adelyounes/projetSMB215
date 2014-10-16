@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Name: " />
+
+        <TextView
+            android:id="@+id/txtFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtNam" />
+
+        <TextView
+            android:id="@+id/txtLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtFirstName" />
+         
+       
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+         <TextView
+            android:id="@+id/TextVi23"
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+            
+            android:layout_marginTop="0dp"
+            android:text="                                                      " />
+         </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+         <TextView
+            android:id="@+id/TextVi1"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_red_light"
+            android:layout_marginTop="0dp"
+            android:text="                                                      " />
+         </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Title: " />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtNam" />
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+         <TextView
+            android:id="@+id/TextVi01"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_red_light"
+            android:layout_marginTop="0dp"
+            android:text="                                                      " />
+         </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/posti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Position: " />
+
+        <TextView
+            android:id="@+id/position1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtNam" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+         <TextView
+            android:id="@+id/TextVilk"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_red_light"
+            android:layout_marginTop="0dp"
+            android:text="                                                      " />
+         </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+         
+          android:background="@android:color/holo_blue_light"
+        
+        >
+
+        <TextView
+            android:id="@+id/txtema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+         android:textColor="@android:color/black"
+           
+            android:padding="5dp"
+            
+            
+            android:text="EmailID: " />
+
+        <TextView
+            android:id="@+id/txtEmailID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         
+        >
+    <TextView
+            android:id="@+id/TextV12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="                " />
+   </LinearLayout> 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light" >
+
+        <TextView
+            android:id="@+id/txtPhn"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Home phone: " />
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtPhn" />
+
+        <Button
+            android:id="@+id/callb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/holo_red_light"
+            android:text="call" />
+
+        <Button
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/holo_red_light"
+            android:layout_toLeftOf="@+id/callb"
+            android:text="sms" />
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+         
+          android:background="@android:color/holo_blue_light"
+        
+        >
+         <TextView
+            android:id="@+id/tx"
+            android:layout_width="110dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:text=" " />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        
+        
+         >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_light"
+            android:layout_marginTop="5dp"
+            android:text="personal Mobile:  " />
+
+        <TextView
+            android:id="@+id/phonenu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/callb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/holo_red_light"
+            android:text="call" />
+
+        <Button
+            android:id="@+id/message2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/callb"
+            android:background="@android:color/holo_red_light"
+            android:text="sms" />
+       
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+            android:id="@+id/TextVi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="                " />
+   </LinearLayout> 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+         >
+
+        <Button
+            android:id="@+id/Delete"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:onClick="deleteContact"
+            android:text="Del Contact"
+            android:background="@android:color/holo_blue_light"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/txr4"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:text=" " />
+
+        <Button
+            android:id="@+id/Edite"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:onClick="editContact"
+            android:text="Edit Contact"
+            android:background="@android:color/holo_blue_light"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>
