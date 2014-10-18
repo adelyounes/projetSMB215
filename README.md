@@ -6,7 +6,7 @@ Projet smb215
 
 Adel Yones
 
-Lien du projet: https://github.com/adelyounes/projetSMB215
+Lien du projet: https://github.com/adelyounes/projetSMB215.
 Ce projet comprend des applications android développée en utilisant les technologies Java, Xml.
 Le projet « phone book »,  Nous pouvons augmenter les informations sur leur personnel comme des numéros et modifier leurs propres informations ainsi que de prendre contact avec eux et envoyer des messages texte à eux, et l'information est stockée via la base de données sqlite.
 Cette application sera utilisée dans l'organisation pour laquelle je travaille.
